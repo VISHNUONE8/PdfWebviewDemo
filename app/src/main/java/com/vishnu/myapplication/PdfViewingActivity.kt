@@ -14,16 +14,13 @@ import androidx.appcompat.app.AppCompatActivity
 class PdfViewingActivity : AppCompatActivity() {
 
 
-    private val i = 0
 
     private lateinit var pdfView: WebView
     private lateinit var progress: ProgressBar
 
     private val removePdfTopIcon =
         "javascript:(function() {" + "document.querySelector('[role=\"toolbar\"]').remove();})()"
-    private val strArray = arrayOf(
-        "https://drive.google.com/u/0/uc?id=1y3dhbuVW5vqF6nL2x12AGXt5M3ZtXGtF&export=download",
-    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_viewing)
